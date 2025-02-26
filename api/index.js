@@ -11,7 +11,10 @@ dbConnect();
 const app = express();
 
 const corsOptions = {
-  origin: ["https://kovias-pix-frontend.vercel.app", "http://localhost:5173"],
+  origin: [
+    "https://storemultimediafrontend-git-main-krishnas-projects-02546f66.vercel.app",
+    "http://localhost:5173",
+  ],
   allowedMethods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
   allowedHeaders: ["Content-Type", "Accept", "Authorization"],
   credentails: true,
