@@ -1,12 +1,8 @@
-import express, { Router, Request, Response } from "express";
-import mongoose, { HydratedDocument } from "mongoose";
-import bcrypt from "bcrypt";
+import { Router } from "express";
 import jwt from "jsonwebtoken";
-import UserModel from "../models/UserModel";
-import { User, LoginORSignUpResponse, UserDocInterface } from "../types";
+import UserModel from "../models/UserModel.js";
 import "dotenv/config";
-import { OptionalId } from "mongodb";
-import authorizedAccess from "../utils/authorizedAccess";
+import authorizedAccess from "../utils/authorizedAccess.js";
 
 const authRouter = Router();
 

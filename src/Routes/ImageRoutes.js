@@ -1,17 +1,14 @@
 import { Router } from "express";
 import multer from "multer";
-import ImageModel from "../models/ImageModel";
-import { commentOBJ, ImageDocInterface } from "../types";
+import ImageModel from "../models/ImageModel.js";
 import { v2 as cloudinary } from "cloudinary";
-import authorizedAccess from "../utils/authorizedAccess";
+import authorizedAccess from "../utils/authorizedAccess.js";
 const uploads = multer({
   storage: multer.diskStorage({}),
   limits: {
     fileSize: 11 * 1024 * 1024,
   },
 });
-
-import { ImageInterface } from "../types";
 
 export const imageRouter = Router();
 // RESPONSIBLE FOR UPLOADING IMAGE

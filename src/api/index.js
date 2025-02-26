@@ -1,11 +1,11 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import authRouter from "../Routes/AuthRoutes";
-import dbConnect from "../utils/dbConnectFunction";
+import authRouter from "../Routes/AuthRoutes.js";
+import dbConnect from "../utils/dbConnectFunction.js";
 import { v2 as cloudinary } from "cloudinary";
-import { AlbumRouter } from "../Routes/AlbumRoute";
-import { imageRouter } from "../Routes/ImageRoutes";
+import { AlbumRouter } from "../Routes/AlbumRoute.js";
+import { imageRouter } from "../Routes/ImageRoutes.js";
 dbConnect();
 
 const app = express();

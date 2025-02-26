@@ -1,8 +1,8 @@
 import { Router } from "express";
-import AlbumModel from "../models/AlbumModel";
-import ImageModel from "../models/ImageModel";
+import AlbumModel from "../models/AlbumModel.js";
+import ImageModel from "../models/ImageModel.js";
 import { v2 as cloudinary } from "cloudinary";
-import authorizedAccess from "../utils/authorizedAccess";
+import authorizedAccess from "../utils/authorizedAccess.js";
 export const AlbumRouter = Router();
 import mongoose from "mongoose";
 
